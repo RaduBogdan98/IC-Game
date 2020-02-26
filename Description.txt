@@ -1,0 +1,1 @@
+Aplicatia este un joc 2D de tip platformer asemanator 'Jazz the Jackrabbit'. Nu avem inca o denumire. Caracterul principal este o vulpe.
