@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -25,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
+            animator.SetTrigger("hasTakenOff");
             animator.SetBool("Jump", true);
             jump = true;
         }
@@ -41,6 +43,14 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.CompareTag("Coins"))
+        {
+            Destroy(collider.gameObject);
+        }
+    }
+
     //Move character
     private void FixedUpdate()
     {
@@ -50,6 +60,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnLanding()
     {
-        animator.SetBool("Jump", false);
+        animator.SetTrigger("hasLanded");
     }
 }
