@@ -1,0 +1,29 @@
+	IDLE
+1-2: 150ms
+
+	JUMP
+1-4: 150ms
+
+	RUN
+1-6: 100ms
+	
+	SLIDE
+1-2: 150ms
+
+	HURT
+1-2: 150ms
+3-5: 70ms
+6-8: 180ms
+
+	DEATH
+1-3: 150ms
+4: 1200ms
+
+	CROUCH
+debatable
+
+	FALL HURT
+1-3: 70ms (optional)
+4: 50ms
+5-8: 70ms
+	
