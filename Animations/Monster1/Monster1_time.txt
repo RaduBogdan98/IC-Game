@@ -1,0 +1,21 @@
+	IDLE
+1-2: 100ms
+3: 200ms
+4-5: 230ms
+
+	WALK
+1-6: 100ms
+
+	HURT
+1: 100ms
+2: 165ms
+3-7: 175ms
+
+	ATTACK
+1-5:120ms
+
+	DEATH
+1-4: 120ms
+5: 800ms
+6-8: 100ms
+9: 300ms
