@@ -8160,6 +8160,7 @@ GameObject:
   - component: {fileID: 470469278}
   - component: {fileID: 470469277}
   - component: {fileID: 470469286}
+  - component: {fileID: 470469285}
   m_Layer: 0
   m_Name: Monster1
   m_TagString: Monster
@@ -8177,10 +8178,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.016113758, y: 0.54}
+  m_Offset: {x: 0.008140087, y: 0.49616405}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -8191,7 +8192,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6635523, y: 0.2049154}
+  m_Size: {x: 0.8549242, y: 0.2447663}
   m_EdgeRadius: 0
 --- !u!60 &470469278
 PolygonCollider2D:
@@ -8203,7 +8204,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 09217bb5867cb6441b9f2e4223cab134, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -8251,16 +8252,16 @@ PolygonCollider2D:
       - {x: 0.31960297, y: 0.17410456}
       - {x: -0.009173393, y: 0.07260525}
       - {x: 0.36698055, y: 0.36328778}
-      - {x: 0.3669796, y: 0.36138922}
-      - {x: 0.31255627, y: 0.39019486}
-      - {x: 0.27244568, y: 0.41131783}
-      - {x: 0.18526554, y: 0.42261353}
-      - {x: 0.058241844, y: 0.42231542}
-      - {x: -0.023737907, y: 0.4224105}
-      - {x: -0.07714462, y: 0.43145514}
-      - {x: -0.14011383, y: 0.44014075}
-      - {x: -0.19996166, y: 0.42988074}
-      - {x: -0.2572899, y: 0.38546273}
+      - {x: 0.3594513, y: 0.36138922}
+      - {x: 0.32761288, y: 0.3600945}
+      - {x: 0.30255985, y: 0.36115053}
+      - {x: 0.22541809, y: 0.35990438}
+      - {x: 0.12098026, y: 0.36462307}
+      - {x: 0.01892376, y: 0.357193}
+      - {x: -0.049539566, y: 0.35871255}
+      - {x: -0.12003708, y: 0.3648898}
+      - {x: -0.22756577, y: 0.3721883}
+      - {x: -0.26732826, y: 0.36539578}
       - {x: -0.2959013, y: 0.34347063}
       - {x: -0.31543446, y: 0.2957449}
       - {x: -0.3182354, y: 0.18691295}
@@ -8393,7 +8394,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470469276}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.769, y: -0.20765913, z: 0}
+  m_LocalPosition: {x: 14.8, y: -0.20765913, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1448801096}
@@ -8417,7 +8418,6 @@ MonoBehaviour:
   animator: {fileID: 470469280}
   player: {fileID: 481421817}
   fistCollider: {fileID: 470469286}
-  hurtCollider: {fileID: 0}
 --- !u!114 &470469284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8446,6 +8446,32 @@ MonoBehaviour:
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!61 &470469285
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470469276}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.062434673, y: -0.7221278}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.1428572, y: 1.5428572}
+    newSize: {x: 0.4, y: 0.54}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7444639, y: 0.07482791}
+  m_EdgeRadius: 0
 --- !u!60 &470469286
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8456,7 +8482,7 @@ PolygonCollider2D:
   m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 09217bb5867cb6441b9f2e4223cab134, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -8541,6 +8567,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 481421812}
   animator: {fileID: 481421810}
+  rigidbody: {fileID: 481421815}
   speed: 40
 --- !u!114 &481421812
 MonoBehaviour:

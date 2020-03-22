@@ -8,11 +8,11 @@ public class Monster1Movement : MonoBehaviour
     public Animator animator;
     public Transform player;
     public Collider2D fistCollider;
-    public Collider2D hurtCollider;
     private float horizontalMovement;
     private int frames;
     private int direction = -1;
     private bool isAttacking = false;
+    private bool death = false;
     private float activationTime;
 
     private void Start()
@@ -59,16 +59,20 @@ public class Monster1Movement : MonoBehaviour
         animator.SetBool("shouldAttack", isAttacking);
     }
 
-    public static void HurtMonster()
+    public void HurtMonster()
     {
-
+        animator.SetTrigger("isHurt");
+        death = true;
+        Invoke("killMonster", 2.9f);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            LivesScore.instance.ChangeScore(-1);
+            animator.SetTrigger("isHurt");
+            death = true;
+            Invoke("killMonster", 3.2f);
         }
     }
 
@@ -76,24 +80,19 @@ public class Monster1Movement : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("Player"))
         {
-            animator.SetTrigger("isHurt");
+            LivesScore.instance.ChangeScore(-1);
         }
     }
 
-    private void activateFistCollider()
+    private void killMonster()
     {
-        fistCollider.enabled = true;
-    }
-
-    private void deactivateFistCollider()
-    {
-        fistCollider.enabled = false;
+        Destroy(gameObject);
     }
 
     //Move character
     private void FixedUpdate()
     {
-        if (frames > 180 && isAttacking == false)
+        if (frames > 180 && isAttacking == false && death==false)
         {
             controller.Move(horizontalMovement * Time.fixedDeltaTime, false, false);
             animator.SetFloat("Speed", 1);

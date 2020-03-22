@@ -7,8 +7,10 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D controller;
     public Animator animator;
+    public Rigidbody2D rigidbody;
     private float horizontalMovement;
     public float speed = 40;
+    private float hurtVelocity = 20;
     private bool jump = false;
     private bool crouch = false;
 
@@ -43,13 +45,34 @@ public class PlayerMovement : MonoBehaviour
         {
             Destroy(collider.gameObject);
         }
+        else if (collider.gameObject.CompareTag("Monster"))
+        {
+            animator.SetTrigger("IsHurt");
+            float position = collider.gameObject.transform.position.x - transform.position.x;
+            if (position > 0)
+            {
+                rigidbody.velocity = new Vector2(-hurtVelocity, rigidbody.velocity.y + 5);
+            }
+            else
+            {
+                rigidbody.velocity = new Vector2(hurtVelocity, rigidbody.velocity.y + 5);
+            }
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Monster"))
         {
-            animator.SetTrigger("IsHurt");
+            float position = collision.gameObject.transform.position.x - transform.position.x;
+            if (position > 0)
+            {
+                rigidbody.velocity = new Vector2(-5, rigidbody.velocity.y + 5);
+            }
+            else
+            {
+                rigidbody.velocity = new Vector2(5, rigidbody.velocity.y + 5);
+            }
         }
     }
 
