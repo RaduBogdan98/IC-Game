@@ -7,7 +7,7 @@ public class LivesScore : MonoBehaviour
 {
     public static LivesScore instance;
     public TextMeshProUGUI text;
-    int score;
+    int score=3;
 
     // Start is called before the first frame update
     void Start()
