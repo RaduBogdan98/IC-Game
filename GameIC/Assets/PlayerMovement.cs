@@ -10,9 +10,9 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rigidbody;
     private float horizontalMovement;
     public float speed = 40;
-    private float hurtVelocity = 20;
     private bool jump = false;
     private bool crouch = false;
+    private bool isGrounded = true;
 
     // Update is called once per frame
     void Update()
@@ -45,24 +45,49 @@ public class PlayerMovement : MonoBehaviour
         {
             Destroy(collider.gameObject);
         }
-        else if (collider.gameObject.CompareTag("Monster"))
+        else if (collider.gameObject.CompareTag("Monster1"))
         {
             animator.SetTrigger("IsHurt");
             float position = collider.gameObject.transform.position.x - transform.position.x;
             if (position > 0)
             {
-                rigidbody.velocity = new Vector2(-hurtVelocity, rigidbody.velocity.y + 5);
+                rigidbody.velocity = new Vector2(-20, rigidbody.velocity.y + 5);
             }
             else
             {
-                rigidbody.velocity = new Vector2(hurtVelocity, rigidbody.velocity.y + 5);
+                rigidbody.velocity = new Vector2(20, rigidbody.velocity.y + 5);
+            }
+        }
+        else
+        {
+            animator.SetTrigger("IsHurt");
+            float position = collider.gameObject.transform.position.x - transform.position.x;
+            if (position > 0)
+            {
+                rigidbody.velocity = new Vector2(-20, rigidbody.velocity.y + 10);
+            }
+            else
+            {
+                rigidbody.velocity = new Vector2(20, rigidbody.velocity.y + 10);
             }
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Monster"))
+        if (collision.gameObject.CompareTag("Monster1"))
+        {
+            float position = collision.gameObject.transform.position.x - transform.position.x;
+            if (position > 0)
+            {
+                rigidbody.velocity = new Vector2(-5, rigidbody.velocity.y + 5);
+            }
+            else
+            {
+                rigidbody.velocity = new Vector2(5, rigidbody.velocity.y + 5);
+            }
+        }
+        else if (collision.gameObject.CompareTag("Monster2"))
         {
             float position = collision.gameObject.transform.position.x - transform.position.x;
             if (position > 0)
@@ -85,6 +110,10 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnLanding()
     {
+        isGrounded = !isGrounded;
+
+        Debug.Log("is grounded");
+
         animator.SetTrigger("hasLanded");
     }
 }

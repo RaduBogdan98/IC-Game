@@ -7,6 +7,8 @@ TagManager:
   - Coins
   - Monster
   - HurtEnemy
+  - Monster1
+  - Monster2
   layers:
   - Default
   - TransparentFX

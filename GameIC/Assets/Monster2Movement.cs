@@ -24,7 +24,7 @@ public class Monster2Movement : MonoBehaviour
     void Update()
     {
         float distance = player.position.x - transform.position.x;
-        if (distance > -1.5 && distance < 1.5)
+        if (distance > -1.7 && distance < 1.7)
         {
             isAttacking = true;
             float ellapsedTime = Time.time - activationTime;
@@ -59,30 +59,23 @@ public class Monster2Movement : MonoBehaviour
         animator.SetBool("shouldAttack", isAttacking);
     }
 
-    public void HurtMonster()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        animator.SetTrigger("isHurt");
-        death = true;
-        Invoke("killMonster", 2.9f);
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            animator.SetTrigger("isHurt");
+            death = true;
+            Invoke("killMonster", 1.5f);
+        }
     }
 
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.CompareTag("Player"))
-    //    {
-    //        animator.SetTrigger("isHurt");
-    //        death = true;
-    //        Invoke("killMonster", 3.2f);
-    //    }
-    //}
-
-    //private void OnTriggerEnter2D(Collider2D collider)
-    //{
-    //    if (collider.gameObject.CompareTag("Player"))
-    //    {
-    //        LivesScore.instance.ChangeScore(-1);
-    //    }
-    //}
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.CompareTag("Player"))
+        {
+            LivesScore.instance.ChangeScore(-1);
+        }
+    }
 
     private void killMonster()
     {
@@ -92,11 +85,10 @@ public class Monster2Movement : MonoBehaviour
     //Move character
     private void FixedUpdate()
     {
-        if (frames > 180 && isAttacking == false /*&& death == false*/)
+        if (frames > 180 && isAttacking == false && death == false)
         {
             controller.Move(horizontalMovement * Time.fixedDeltaTime, false, false);
             animator.SetFloat("Speed", 1);
-            Debug.Log("ShouldMove");
         }
         else
         {

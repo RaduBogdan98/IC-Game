@@ -59,20 +59,13 @@ public class Monster1Movement : MonoBehaviour
         animator.SetBool("shouldAttack", isAttacking);
     }
 
-    public void HurtMonster()
-    {
-        animator.SetTrigger("isHurt");
-        death = true;
-        Invoke("killMonster", 2.9f);
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             animator.SetTrigger("isHurt");
             death = true;
-            Invoke("killMonster", 3.2f);
+            Invoke("killMonster", 2.5f);
         }
     }
 
