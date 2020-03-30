@@ -67,6 +67,7 @@
     <Compile Include="Assets\LivesScore.cs" />
     <Compile Include="Assets\Monster1Movement.cs" />
     <Compile Include="Assets\Monster2Movement.cs" />
+    <Compile Include="Assets\MovingPlatformScript.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />

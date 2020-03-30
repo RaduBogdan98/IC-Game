@@ -9,6 +9,7 @@ TagManager:
   - HurtEnemy
   - Monster1
   - Monster2
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX

@@ -7,12 +7,17 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D controller;
     public Animator animator;
-    public Rigidbody2D rigidbody;
+    private Rigidbody2D rigidbody;
     private float horizontalMovement;
     public float speed = 40;
     private bool jump = false;
     private bool crouch = false;
     private bool isGrounded = true;
+
+    private void Start()
+    {
+        rigidbody = GetComponent<Rigidbody2D>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -58,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
                 rigidbody.velocity = new Vector2(20, rigidbody.velocity.y + 5);
             }
         }
-        else
+        else if (collider.gameObject.CompareTag("Monster2"))
         {
             animator.SetTrigger("IsHurt");
             float position = collider.gameObject.transform.position.x - transform.position.x;
