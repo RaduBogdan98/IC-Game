@@ -7,7 +7,9 @@ public class LivesScore : MonoBehaviour
 {
     public static LivesScore instance;
     public TextMeshProUGUI text;
-    int score=3;
+    public GameObject player;
+    private int score=3;
+    [SerializeField] private Transform respawnPoint;
 
     // Start is called before the first frame update
     void Start()
@@ -23,5 +25,11 @@ public class LivesScore : MonoBehaviour
     {
         score += value;
         text.text = score.ToString();
+
+        if(score == 0)
+        {
+            player.transform.position = respawnPoint.position;
+            ChangeScore(3);
+        }
     }
 }

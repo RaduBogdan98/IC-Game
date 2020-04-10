@@ -10,6 +10,8 @@ TagManager:
   - Monster1
   - Monster2
   - MovingPlatform
+  - Dart
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

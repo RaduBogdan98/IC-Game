@@ -61,14 +61,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CharacterController2D.cs" />
+    <Compile Include="Assets\CheckpointScript.cs" />
     <Compile Include="Assets\CoinCollectableScript.cs" />
     <Compile Include="Assets\CoinScore.cs" />
+    <Compile Include="Assets\DartMovement.cs" />
     <Compile Include="Assets\HeartCollectableScript.cs" />
     <Compile Include="Assets\LivesScore.cs" />
     <Compile Include="Assets\Monster1Movement.cs" />
     <Compile Include="Assets\Monster2Movement.cs" />
     <Compile Include="Assets\MovingPlatformScript.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
+    <Compile Include="Assets\Respawner.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

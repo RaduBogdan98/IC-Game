@@ -56,11 +56,11 @@ public class PlayerMovement : MonoBehaviour
             float position = collider.gameObject.transform.position.x - transform.position.x;
             if (position > 0)
             {
-                rigidbody.velocity = new Vector2(-20, rigidbody.velocity.y + 5);
+                rigidbody.velocity = new Vector2(-50, rigidbody.velocity.y + 5);
             }
             else
             {
-                rigidbody.velocity = new Vector2(20, rigidbody.velocity.y + 5);
+                rigidbody.velocity = new Vector2(50, rigidbody.velocity.y + 5);
             }
         }
         else if (collider.gameObject.CompareTag("Monster2"))
@@ -69,11 +69,11 @@ public class PlayerMovement : MonoBehaviour
             float position = collider.gameObject.transform.position.x - transform.position.x;
             if (position > 0)
             {
-                rigidbody.velocity = new Vector2(-20, rigidbody.velocity.y + 10);
+                rigidbody.velocity = new Vector2(-20, rigidbody.velocity.y + 20);
             }
             else
             {
-                rigidbody.velocity = new Vector2(20, rigidbody.velocity.y + 10);
+                rigidbody.velocity = new Vector2(20, rigidbody.velocity.y + 20);
             }
         }
     }
@@ -85,11 +85,11 @@ public class PlayerMovement : MonoBehaviour
             float position = collision.gameObject.transform.position.x - transform.position.x;
             if (position > 0)
             {
-                rigidbody.velocity = new Vector2(-5, rigidbody.velocity.y + 5);
+                rigidbody.velocity = new Vector2(15, rigidbody.velocity.y + 15);
             }
             else
             {
-                rigidbody.velocity = new Vector2(5, rigidbody.velocity.y + 5);
+                rigidbody.velocity = new Vector2(-15, rigidbody.velocity.y + 15);
             }
         }
         else if (collision.gameObject.CompareTag("Monster2"))
@@ -97,13 +97,19 @@ public class PlayerMovement : MonoBehaviour
             float position = collision.gameObject.transform.position.x - transform.position.x;
             if (position > 0)
             {
-                rigidbody.velocity = new Vector2(-5, rigidbody.velocity.y + 5);
+                rigidbody.velocity = new Vector2(15, rigidbody.velocity.y + 15);
             }
             else
             {
-                rigidbody.velocity = new Vector2(5, rigidbody.velocity.y + 5);
+                rigidbody.velocity = new Vector2(-15, rigidbody.velocity.y + 15);
             }
         }
+        else if (collision.gameObject.CompareTag("Dart"))
+        {
+            animator.SetTrigger("IsHurt");
+            rigidbody.velocity = new Vector2(30, rigidbody.velocity.y + 5);
+        }
+
     }
 
     //Move character
