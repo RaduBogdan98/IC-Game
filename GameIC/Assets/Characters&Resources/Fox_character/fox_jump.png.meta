@@ -1,13 +1,21 @@
 fileFormatVersion: 2
 guid: 946e80d822b78fe468739a0e95255d70
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: fox_jump_0
-    21300002: fox_jump_1
-    21300004: fox_jump_2
-    21300006: fox_jump_3
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: fox_jump_0
+  - first:
+      213: 21300002
+    second: fox_jump_1
+  - first:
+      213: 21300004
+    second: fox_jump_2
+  - first:
+      213: 21300006
+    second: fox_jump_3
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -35,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -61,30 +69,33 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -95,6 +106,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -114,6 +126,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e7ea90eae9a584644b42ea8e3169fd6f
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -134,6 +147,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c8eb7566462abe044821de3fcd42d161
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -154,6 +168,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 480a02c169e49774e8705aac671dc5b0
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -174,6 +189,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 81c0618e637ca5a489944bf8889f6315
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -182,10 +198,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 87ce75282ab9d894f9a3af78a543e27d
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
