@@ -27,5 +27,6 @@ public class Respawner : MonoBehaviour
     {
         GameObject spawnedObj = Instantiate(objectPrefab) as GameObject;
         spawnedObj.transform.position = respawnPoint.transform.position;
+        spawnedObj.transform.parent = this.transform;
     }
 }

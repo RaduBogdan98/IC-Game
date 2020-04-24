@@ -6,6 +6,7 @@ public class DartMovement : MonoBehaviour
 {
     private Vector2 movementFactor;
     private Rigidbody2D rigidBody;
+    public float wallPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,11 @@ public class DartMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rigidBody.MovePosition(rigidBody.position + movementFactor * Time.fixedDeltaTime);
-        Invoke("destroyDart", 4f);
+
+        if (this.transform.localPosition.x >= wallPosition)
+        {
+            destroyDart();
+        }
     }
 
     private void destroyDart()
@@ -29,7 +34,7 @@ public class DartMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Invoke("destroyDart",0.2f);
+            Invoke("destroyDart", 0.2f);
             LivesScore.instance.ChangeScore(-1);
         }
     }

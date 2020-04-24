@@ -19,6 +19,11 @@ public class LivesScore : MonoBehaviour
             instance = this;
         }
     }
+    
+    internal int GetCurrentNumberOfLives()
+    {
+        return score;
+    }
 
     // Update is called once per frame
     public void ChangeScore(int value)

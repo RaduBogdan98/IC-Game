@@ -12,6 +12,7 @@ TagManager:
   - MovingPlatform
   - Dart
   - Checkpoint
+  - Walls
   layers:
   - Default
   - TransparentFX

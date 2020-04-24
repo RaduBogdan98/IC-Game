@@ -21,10 +21,27 @@ public class Monster1Movement : MonoBehaviour
         activationTime = -1;
     }
 
-    void Update()
+    private bool isCloseToPlayer()
     {
         float distance = player.position.x - transform.position.x;
-        if (distance > -1.5 && distance < 1.5)
+        if((int)player.position.y == (int)transform.position.y)
+        {
+            if (player.localScale.x == -this.transform.localScale.x)
+            {
+                if (distance > -1.5 && distance < 1.5)
+                {
+                    return true;
+                }
+            }
+
+        }
+
+        return false;
+    }
+
+    void Update()
+    {
+        if (true == isCloseToPlayer())
         {
             isAttacking = true;
             float ellapsedTime = Time.time - activationTime;
@@ -85,7 +102,7 @@ public class Monster1Movement : MonoBehaviour
     //Move character
     private void FixedUpdate()
     {
-        if (frames > 180 && isAttacking == false && death==false)
+        if (frames > 180 && isAttacking == false && death == false)
         {
             controller.Move(horizontalMovement * Time.fixedDeltaTime, false, false);
             animator.SetFloat("Speed", 1);

@@ -18,6 +18,11 @@ public class CoinScore : MonoBehaviour
         }
     }
 
+    internal int GetCurrentNumberOfCoins()
+    {
+        return score;
+    }
+
     // Update is called once per frame
     public void ChangeScore(int value)
     {

@@ -21,10 +21,27 @@ public class Monster2Movement : MonoBehaviour
         activationTime = -1;
     }
 
-    void Update()
+    private bool isCloseToPlayer()
     {
         float distance = player.position.x - transform.position.x;
-        if (distance > -1.7 && distance < 1.7)
+        if ((int)player.position.y == (int)transform.position.y)
+        {
+            if (player.localScale.x == -this.transform.localScale.x)
+            {
+                if (distance > -1.7 && distance < 1.7)
+                {
+                    return true;
+                }
+            }
+
+        }
+
+        return false;
+    }
+
+    void Update()
+    {
+        if (true == isCloseToPlayer())
         {
             isAttacking = true;
             float ellapsedTime = Time.time - activationTime;
