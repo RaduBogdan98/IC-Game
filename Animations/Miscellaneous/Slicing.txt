@@ -1,0 +1,2 @@
+Waterfall: 864 x 240 pixels
+Water wave: 144 x 48 pixels
