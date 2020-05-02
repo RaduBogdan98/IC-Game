@@ -1,21 +1,21 @@
 fileFormatVersion: 2
-guid: 9b23036ea2d3d7148a23b3dfb416d5b5
+guid: 9bbd490c74fe4d84fb2c337173f8c72f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 21300000
+      213: 6185921761728834006
     second: monster2_walk_0
   - first:
-      213: 21300002
+      213: -1122671373177415025
     second: monster2_walk_1
   - first:
-      213: 21300004
+      213: 3267111263774275047
     second: monster2_walk_2
   - first:
-      213: 21300006
+      213: 4385407453246473344
     second: monster2_walk_3
   - first:
-      213: 21300008
+      213: -667885533455257837
     second: monster2_walk_4
   externalObjects: {}
   serializedVersion: 11
@@ -72,14 +72,14 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -88,52 +88,16 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -141,7 +105,7 @@ TextureImporter:
       name: monster2_walk_0
       rect:
         serializedVersion: 2
-        x: 44
+        x: 81
         y: 38
         width: 44
         height: 52
@@ -152,8 +116,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 799d20aa619e71e4f8a602ae6bd858b9
-      internalID: 21300000
+      spriteID: 6d9a430611fc8d550800000000000000
+      internalID: 6185921761728834006
       vertices: []
       indices: 
       edges: []
@@ -162,7 +126,7 @@ TextureImporter:
       name: monster2_walk_1
       rect:
         serializedVersion: 2
-        x: 228
+        x: 302
         y: 38
         width: 44
         height: 54
@@ -173,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83d658206e18b2843b821fe86fde8640
-      internalID: 21300002
+      spriteID: f8a924295587b60f0800000000000000
+      internalID: -1122671373177415025
       vertices: []
       indices: 
       edges: []
@@ -183,7 +147,7 @@ TextureImporter:
       name: monster2_walk_2
       rect:
         serializedVersion: 2
-        x: 412
+        x: 523
         y: 38
         width: 44
         height: 54
@@ -194,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b3896f1b8cfdc542b1f3ed38ce940ae
-      internalID: 21300004
+      spriteID: 7e571fe626c175d20800000000000000
+      internalID: 3267111263774275047
       vertices: []
       indices: 
       edges: []
@@ -204,7 +168,7 @@ TextureImporter:
       name: monster2_walk_3
       rect:
         serializedVersion: 2
-        x: 596
+        x: 744
         y: 38
         width: 44
         height: 52
@@ -215,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3c3bf9ba9432ed448e20b43ff09c962
-      internalID: 21300006
+      spriteID: 0844b1608d81cdc30800000000000000
+      internalID: 4385407453246473344
       vertices: []
       indices: 
       edges: []
@@ -225,7 +189,7 @@ TextureImporter:
       name: monster2_walk_4
       rect:
         serializedVersion: 2
-        x: 780
+        x: 965
         y: 38
         width: 44
         height: 52
@@ -236,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 659605066a0db82449afb3a0c593808b
-      internalID: 21300008
+      spriteID: 31fe6cb55a13bb6f0800000000000000
+      internalID: -667885533455257837
       vertices: []
       indices: 
       edges: []
@@ -245,7 +209,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9f4982ba7031eb34ca5b3d4ebe7afc32
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

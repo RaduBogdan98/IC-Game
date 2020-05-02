@@ -88,10 +88,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,10 +100,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -276,34 +276,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster2_death_6
-      rect:
-        serializedVersion: 2
-        x: 1136
-        y: 62
-        width: 40
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d477b6bf62ace0241987eed1570a5825
-      internalID: 21300012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: monster2_death_7
       rect:
         serializedVersion: 2
-        x: 1158
-        y: 50
-        width: 48
-        height: 40
+        x: 1136
+        y: 30
+        width: 70
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,22 +297,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster2_death_8
+      name: monster2_death_6
       rect:
         serializedVersion: 2
-        x: 1148
-        y: 30
-        width: 28
-        height: 26
+        x: 1263
+        y: 24
+        width: 70
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02cf28f0325604f46856c828808b2e8e
-      internalID: 21300016
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []

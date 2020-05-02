@@ -3,58 +3,58 @@ guid: 206703a977aa59e48b7da358569589f7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 21300000
+      213: 3385785482477659685
     second: monster2_attack_0
   - first:
-      213: 21300002
+      213: -8192572036541367767
     second: monster2_attack_1
   - first:
-      213: 21300004
+      213: 4862792683015651787
     second: monster2_attack_2
   - first:
-      213: 21300006
+      213: -3588330847637445712
     second: monster2_attack_3
   - first:
-      213: 21300008
+      213: -4108085223365856254
     second: monster2_attack_4
   - first:
-      213: 21300010
+      213: 4955624598382453430
     second: monster2_attack_5
   - first:
-      213: 21300012
+      213: -8636172892500684786
     second: monster2_attack_6
   - first:
-      213: 21300014
+      213: -8127765130027922751
     second: monster2_attack_7
   - first:
-      213: 21300016
+      213: -2652426934254502235
     second: monster2_attack_8
   - first:
-      213: 21300018
+      213: -6574979678404768351
     second: monster2_attack_9
   - first:
-      213: 21300020
+      213: -7323396539589219425
     second: monster2_attack_10
   - first:
-      213: 21300022
+      213: -7706876290287792762
     second: monster2_attack_11
   - first:
-      213: 21300024
+      213: 4920638233639902161
     second: monster2_attack_12
   - first:
-      213: 21300026
+      213: 763567222001397002
     second: monster2_attack_13
   - first:
-      213: 21300028
+      213: 4630408095530752470
     second: monster2_attack_14
   - first:
-      213: 21300030
+      213: -1443384128696661329
     second: monster2_attack_15
   - first:
-      213: 21300032
+      213: 7303164366061085135
     second: monster2_attack_16
   - first:
-      213: 21300034
+      213: 1489849544749422867
     second: monster2_attack_17
   externalObjects: {}
   serializedVersion: 11
@@ -111,14 +111,14 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,52 +127,16 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -180,19 +144,19 @@ TextureImporter:
       name: monster2_attack_0
       rect:
         serializedVersion: 2
-        x: 44
+        x: 46
         y: 38
-        width: 72
+        width: 107
         height: 52
-      alignment: 9
-      pivot: {x: 0.65, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3a4b3c51bf4e164aaac13c9025baec0
-      internalID: 21300000
+      spriteID: 52661c825f9bcfe20800000000000000
+      internalID: 3385785482477659685
       vertices: []
       indices: 
       edges: []
@@ -201,19 +165,19 @@ TextureImporter:
       name: monster2_attack_2
       rect:
         serializedVersion: 2
-        x: 230
+        x: 267
         y: 38
-        width: 70
+        width: 107
         height: 50
-      alignment: 9
-      pivot: {x: 0.65, y: 0.50000006}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a4fb4e5047989f4498a9083587cf3e2
-      internalID: 21300004
+      spriteID: bc144875e2c1c7340800000000000000
+      internalID: 4862792683015651787
       vertices: []
       indices: 
       edges: []
@@ -222,19 +186,19 @@ TextureImporter:
       name: monster2_attack_4
       rect:
         serializedVersion: 2
-        x: 414
+        x: 488
         y: 38
-        width: 70
+        width: 107
         height: 54
-      alignment: 9
-      pivot: {x: 0.65, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e9a4e15648d6664e96d8d93300a176b
-      internalID: 21300008
+      spriteID: 2043f3241462df6c0800000000000000
+      internalID: -4108085223365856254
       vertices: []
       indices: 
       edges: []
@@ -243,19 +207,19 @@ TextureImporter:
       name: monster2_attack_6
       rect:
         serializedVersion: 2
-        x: 598
+        x: 709
         y: 38
-        width: 70
+        width: 107
         height: 56
-      alignment: 9
-      pivot: {x: 0.65, y: 0.5000001}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca6ab5f8e89828a4786426d080bf38a2
-      internalID: 21300012
+      spriteID: e0093abb286262880800000000000000
+      internalID: -8636172892500684786
       vertices: []
       indices: 
       edges: []
@@ -264,19 +228,19 @@ TextureImporter:
       name: monster2_attack_8
       rect:
         serializedVersion: 2
-        x: 780
+        x: 930
         y: 38
-        width: 72
+        width: 107
         height: 50
-      alignment: 9
-      pivot: {x: 0.65, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 587abc6a67724d84cb17b3dc2a27d149
-      internalID: 21300016
+      spriteID: 5aef417a1cfa03bd0800000000000000
+      internalID: -2652426934254502235
       vertices: []
       indices: 
       edges: []
@@ -285,19 +249,19 @@ TextureImporter:
       name: monster2_attack_10
       rect:
         serializedVersion: 2
-        x: 964
+        x: 1151
         y: 38
-        width: 72
+        width: 107
         height: 52
-      alignment: 9
-      pivot: {x: 0.65, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fdad1bd445be1c49a95d2de8da1fadf
-      internalID: 21300020
+      spriteID: f9ba574f5a11e5a90800000000000000
+      internalID: -7323396539589219425
       vertices: []
       indices: 
       edges: []
@@ -306,19 +270,19 @@ TextureImporter:
       name: monster2_attack_12
       rect:
         serializedVersion: 2
-        x: 1148
+        x: 1372
         y: 38
-        width: 72
+        width: 107
         height: 52
-      alignment: 9
-      pivot: {x: 0.65, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b8bb1393dfeb36469e000979793a44e
-      internalID: 21300024
+      spriteID: 1dbdf40276e994440800000000000000
+      internalID: 4920638233639902161
       vertices: []
       indices: 
       edges: []
@@ -327,19 +291,19 @@ TextureImporter:
       name: monster2_attack_14
       rect:
         serializedVersion: 2
-        x: 1332
+        x: 1593
         y: 38
-        width: 72
+        width: 107
         height: 52
-      alignment: 9
-      pivot: {x: 0.65, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f42889a568f83c642a8aa2fdd7cf9a22
-      internalID: 21300028
+      spriteID: 6d9143341a3824040800000000000000
+      internalID: 4630408095530752470
       vertices: []
       indices: 
       edges: []
@@ -348,19 +312,19 @@ TextureImporter:
       name: monster2_attack_16
       rect:
         serializedVersion: 2
-        x: 1518
+        x: 1814
         y: 38
-        width: 70
+        width: 107
         height: 52
-      alignment: 9
-      pivot: {x: 0.65, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b65416c2892258c4dbe1ac3c8c2bf5c3
-      internalID: 21300032
+      spriteID: fc1ac5f0c4d0a5560800000000000000
+      internalID: 7303164366061085135
       vertices: []
       indices: 
       edges: []
@@ -369,19 +333,19 @@ TextureImporter:
       name: monster2_attack_17
       rect:
         serializedVersion: 2
-        x: 1700
+        x: 2035
         y: 38
-        width: 72
+        width: 107
         height: 52
-      alignment: 9
-      pivot: {x: 0.65, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bfebc61a52af094aa9785533e9533b0
-      internalID: 21300034
+      spriteID: 319119374420da410800000000000000
+      internalID: 1489849544749422867
       vertices: []
       indices: 
       edges: []
@@ -389,7 +353,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 292d6f0203f674a48af9b4e20fcb5db5
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
