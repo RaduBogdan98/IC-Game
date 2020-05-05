@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class LivesScore : MonoBehaviour
 {
@@ -36,5 +37,11 @@ public class LivesScore : MonoBehaviour
             player.transform.position = respawnPoint.position;
             ChangeScore(3);
         }
+    }
+
+    internal void SpawnPlayerWithScore(int livesScore, float[] position)
+    {
+        player.transform.position = new Vector3(position[0],position[1]);
+        ChangeScore(livesScore);
     }
 }

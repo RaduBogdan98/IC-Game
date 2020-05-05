@@ -1,35 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ProgressKeeper : MonoBehaviour
 {
-    private ProgressKeeper()
-    {
-       
-    }
-
     #region Methods
-    public static ProgressKeeper getInstance()
+    public static void SaveGame(Vector3 RespawnPoint)
     {
-        if(null == instace)
-        {
-            instace = new ProgressKeeper();
-        }
+        SaveData saveData = new SaveData
+            (
+                LivesScore.instance.GetCurrentNumberOfLives(),
+                CoinScore.instance.GetCurrentNumberOfCoins(),
+                SceneManager.GetActiveScene().buildIndex,
+                new float[] { RespawnPoint.x, RespawnPoint.y, RespawnPoint.z }
+            );
 
-        return instace;
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = Application.persistentDataPath + "/save.fox";
+        FileStream stream = new FileStream(path, FileMode.Create);
+
+        formatter.Serialize(stream, saveData);
+        stream.Close();
     }
-
-    public void SaveState()
-    {
-        SavedLivesScore = LivesScore.instance.GetCurrentNumberOfLives();
-        SavedMoneyScore = CoinScore.instance.GetCurrentNumberOfCoins();
-    }
-    #endregion
-
-    #region Fields
-    public static ProgressKeeper instace;
-    public int SavedLivesScore;
-    public int SavedMoneyScore;
     #endregion
 }

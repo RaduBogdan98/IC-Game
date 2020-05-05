@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class MovingPlatformScript : MonoBehaviour
 {
-    public float TopValue;
+    public float GoToValue;
+    public Direction direction = Direction.Uppwards;
     private Vector2 movementFactor;
     private Rigidbody2D rigidBody;
     private bool shouldMove = false;
@@ -18,12 +19,20 @@ public class MovingPlatformScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movementFactor = new Vector2(0, 1);
+        if (direction == Direction.Uppwards)
+        {
+            movementFactor = new Vector2(0, 1);
+        }
+        else if (direction == Direction.Downwards)
+        {
+            movementFactor = new Vector2(0, -1);
+        }
     }
 
     private void FixedUpdate()
     {
-        if (shouldMove && rigidBody.position.y<TopValue)
+        if ((direction == Direction.Uppwards && shouldMove && rigidBody.position.y < GoToValue) ||
+            (direction == Direction.Downwards && shouldMove && rigidBody.position.y > GoToValue))
         {
             rigidBody.MovePosition(rigidBody.position + movementFactor * Time.fixedDeltaTime);
         }
@@ -36,5 +45,11 @@ public class MovingPlatformScript : MonoBehaviour
         {
             shouldMove = true;
         }
+    }
+
+    public enum Direction
+    {
+        Uppwards,
+        Downwards
     }
 }

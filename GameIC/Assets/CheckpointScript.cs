@@ -11,6 +11,7 @@ public class CheckpointScript : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             respawnPoint.position = this.transform.position;
+            ProgressKeeper.SaveGame(this.transform.position);
             Destroy(this.gameObject);
         }
     }
