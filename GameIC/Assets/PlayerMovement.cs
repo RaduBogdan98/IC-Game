@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        HintRenderer.Instance.RenderHint("Hei this is my game!! :D");
     }
 
     // Update is called once per frame

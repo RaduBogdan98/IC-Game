@@ -11,11 +11,16 @@ public class LeverScript : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            spriteRenderer.flipX = true;
+            if (Input.GetButtonDown("Action"))
+            {
+                Debug.Log("E was pressed");
+                spriteRenderer.flipX = true;
+                SecretManager.Instance.exposeSecret();
+            }
         }
     }
 }
