@@ -13,6 +13,12 @@ public class LeverScript : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        if(true == PlayerMovement.onFirstRun)
+        {
+            HintRenderer.Instance.RenderHint("To activate the lever press the E key!");
+            PlayerMovement.onFirstRun = false;
+        }
+
         if (collision.CompareTag("Player"))
         {
             if (Input.GetButtonDown("Action"))

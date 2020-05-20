@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -13,11 +16,26 @@ public class PlayerMovement : MonoBehaviour
     private bool jump = false;
     private bool crouch = false;
     private bool isGrounded = true;
+    internal static bool onFirstRun = false;
 
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        HintRenderer.Instance.RenderHint("Hei this is my game!! :D");
+        if (!File.Exists(Application.persistentDataPath + "/fox.ini") || SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            onFirstRun = true;
+            File.Create(Application.persistentDataPath + "/fox.ini");
+
+            HintRenderer.Instance.RenderHint("Welcome! I am Foxyu, and this is my Adventure!");
+            HintRenderer.Instance.RenderHint("For me to move pres the left and right arrow keys!");
+            HintRenderer.Instance.RenderHint("Press SPACE or up to make me jump!");
+            HintRenderer.Instance.RenderHint("The camera will keep turning. That will annoy you quite a bit for sure!");
+            HintRenderer.Instance.RenderHint("That's it for starters! Enjoy your ride!!");
+        }
+        else
+        {
+            onFirstRun = false;
+        }
     }
 
     // Update is called once per frame
