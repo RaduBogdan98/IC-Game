@@ -10,6 +10,7 @@ public class HeartCollectableScript : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("Player"))
         {
+            SoundManagerScript.PlaySound("Powerup");
             LivesScore.instance.ChangeScore(value);
         }
     }

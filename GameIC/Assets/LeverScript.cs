@@ -25,6 +25,7 @@ public class LeverScript : MonoBehaviour
             {
                 Debug.Log("E was pressed");
                 spriteRenderer.flipX = true;
+                SoundManagerScript.PlaySound("Rise03");
                 SecretManager.Instance.exposeSecret();
             }
         }

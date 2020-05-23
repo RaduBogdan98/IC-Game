@@ -80,22 +80,24 @@ public class Monster1Movement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            SoundManagerScript.PlaySound("monster1");
             animator.SetTrigger("isHurt");
-            death = true;
-            Invoke("killMonster", 2.5f);
+            death = true;          
+            Invoke("killMonster", 2.5f);       
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.CompareTag("Player"))
-        {
+        {         
             LivesScore.instance.ChangeScore(-1);
         }
     }
 
     private void killMonster()
     {
+        
         Destroy(gameObject);
     }
 

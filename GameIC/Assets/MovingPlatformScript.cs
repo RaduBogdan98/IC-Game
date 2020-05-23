@@ -21,11 +21,11 @@ public class MovingPlatformScript : MonoBehaviour
     {
         if (direction == Direction.Uppwards)
         {
-            movementFactor = new Vector2(0, 1);
+            movementFactor = new Vector2(0, 3);
         }
         else if (direction == Direction.Downwards)
         {
-            movementFactor = new Vector2(0, -1);
+            movementFactor = new Vector2(0, -3);
         }
     }
 

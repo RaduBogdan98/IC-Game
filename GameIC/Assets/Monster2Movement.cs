@@ -80,6 +80,7 @@ public class Monster2Movement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            SoundManagerScript.PlaySound("monster2");
             animator.SetTrigger("isHurt");
             death = true;
             Invoke("killMonster", 1.5f);

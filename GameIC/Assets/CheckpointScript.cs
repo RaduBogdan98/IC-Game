@@ -10,6 +10,7 @@ public class CheckpointScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            SoundManagerScript.PlaySound("sfx_sound_neutral9");
             respawnPoint.position = this.transform.position;
             ProgressKeeper.SaveGame(this.transform.position);
             Destroy(this.gameObject);

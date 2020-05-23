@@ -46,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
+            SoundManagerScript.PlaySound("Jump");
             animator.SetTrigger("hasTakenOff");
             animator.SetBool("Jump", true);
             jump = true;
@@ -71,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (collider.gameObject.CompareTag("Monster1"))
         {
+            SoundManagerScript.PlaySound("sfx_sounds_impact5");
             animator.SetTrigger("IsHurt");
             float position = collider.gameObject.transform.position.x - transform.position.x;
             if (position > 0)
@@ -84,6 +86,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (collider.gameObject.CompareTag("Monster2"))
         {
+            SoundManagerScript.PlaySound("sfx_sounds_impact5");
             animator.SetTrigger("IsHurt");
             float position = collider.gameObject.transform.position.x - transform.position.x;
             if (position > 0)
@@ -125,6 +128,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Dart"))
         {
+            SoundManagerScript.PlaySound("sfx_sounds_impact5");
             animator.SetTrigger("IsHurt");
             rigidbody.velocity = new Vector2(30, rigidbody.velocity.y + 5);
         }
