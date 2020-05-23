@@ -5,6 +5,7 @@ using UnityEngine;
 public class LeverScript : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
+    public SecretManager Secret;
 
     private void Start()
     {
@@ -23,10 +24,9 @@ public class LeverScript : MonoBehaviour
         {
             if (Input.GetButtonDown("Action"))
             {
-                Debug.Log("E was pressed");
                 spriteRenderer.flipX = true;
                 SoundManagerScript.PlaySound("Rise03");
-                SecretManager.Instance.exposeSecret();
+                Secret.exposeSecret();
             }
         }
     }

@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class MovingPlatformScript : MonoBehaviour
 {
-    public float GoToValue;
+    public float GoToUppwardsValue;
+    public float GoToDownwardsValue;
     public Direction direction = Direction.Uppwards;
+    public Direction originalDirection;
     private Vector2 movementFactor;
     private Rigidbody2D rigidBody;
     private bool shouldMove = false;
@@ -14,6 +16,7 @@ public class MovingPlatformScript : MonoBehaviour
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+        originalDirection = direction;
     }
 
     // Update is called once per frame
@@ -31,17 +34,36 @@ public class MovingPlatformScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if ((direction == Direction.Uppwards && shouldMove && rigidBody.position.y < GoToValue) ||
-            (direction == Direction.Downwards && shouldMove && rigidBody.position.y > GoToValue))
+        if ((direction == Direction.Uppwards && shouldMove && rigidBody.position.y < GoToUppwardsValue) ||
+            (direction == Direction.Downwards && shouldMove && rigidBody.position.y > GoToDownwardsValue))
         {
             rigidBody.MovePosition(rigidBody.position + movementFactor * Time.fixedDeltaTime);
         }
+        else if (direction == Direction.Uppwards && shouldMove && rigidBody.position.y >= GoToUppwardsValue)
+        {
+            shouldMove = false;
+            direction = Direction.Downwards;
+            Invoke("MoveBack", 5f);
+        }
+        else if (direction == Direction.Downwards && shouldMove && rigidBody.position.y <= GoToDownwardsValue)
+        {
+            shouldMove = false;
+            direction = Direction.Uppwards;
+            Invoke("MoveBack", 5f);
+        }
     }
 
+    private void MoveBack()
+    {
+        if (shouldMove == false && direction != originalDirection)
+        {
+            shouldMove = true;
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("Player"))
+        if (collider.CompareTag("Player") && direction == originalDirection)
         {
             shouldMove = true;
         }

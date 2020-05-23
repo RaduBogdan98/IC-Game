@@ -4,14 +4,10 @@ using UnityEngine;
 
 public class SecretManager : MonoBehaviour
 {
-    private SecretManager() { }
-
     private void Start()
     {
-        if (instance == null) instance = this;
         Hider.SetActive(true);
         Secret.SetActive(false);
-
     }
 
     #region Methods
@@ -22,19 +18,8 @@ public class SecretManager : MonoBehaviour
     }
     #endregion
 
-    #region Properties
-    public static SecretManager Instance
-    {
-        get
-        {
-            return instance;
-        }
-    }
-    #endregion
-
     #region Fields
     [SerializeField] private GameObject Hider;
     [SerializeField] private GameObject Secret;
-    private static SecretManager instance;
     #endregion
 }

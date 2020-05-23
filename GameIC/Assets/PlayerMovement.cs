@@ -132,7 +132,13 @@ public class PlayerMovement : MonoBehaviour
             animator.SetTrigger("IsHurt");
             rigidbody.velocity = new Vector2(30, rigidbody.velocity.y + 5);
         }
-
+        else if (collision.gameObject.CompareTag("Spike"))
+        {
+            SoundManagerScript.PlaySound("sfx_sounds_impact5");
+            animator.SetTrigger("IsHurt");
+            rigidbody.velocity = new Vector2(rigidbody.velocity.x + 5, 30);
+            LivesScore.instance.ChangeScore(-1);
+        }
     }
 
     //Move character
