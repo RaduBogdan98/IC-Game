@@ -34,7 +34,7 @@ public class DartMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Invoke("destroyDart", 0.2f);
+            Invoke("destroyDart", 0f);
             LivesScore.instance.ChangeScore(-1);
         }
     }

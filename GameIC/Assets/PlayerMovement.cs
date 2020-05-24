@@ -136,7 +136,7 @@ public class PlayerMovement : MonoBehaviour
         {
             SoundManagerScript.PlaySound("sfx_sounds_impact5");
             animator.SetTrigger("IsHurt");
-            rigidbody.velocity = new Vector2(rigidbody.velocity.x + 5, 30);
+            rigidbody.velocity = new Vector2(rigidbody.velocity.x + 5, 15);
             LivesScore.instance.ChangeScore(-1);
         }
     }

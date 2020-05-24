@@ -43,13 +43,13 @@ public class MovingPlatformScript : MonoBehaviour
         {
             shouldMove = false;
             direction = Direction.Downwards;
-            Invoke("MoveBack", 5f);
+            Invoke("MoveBack", 3f);
         }
         else if (direction == Direction.Downwards && shouldMove && rigidBody.position.y <= GoToDownwardsValue)
         {
             shouldMove = false;
             direction = Direction.Uppwards;
-            Invoke("MoveBack", 5f);
+            Invoke("MoveBack", 3f);
         }
     }
 
