@@ -33,7 +33,6 @@ ScriptsOnlyBuild:
     - UnityEngine.U2D.PixelPerfectCamera
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -69,8 +68,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Toggle
-    com.unity.multiplayer-hlapi.Runtime.dll:
-    - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
     Assets/Scenes/Level1Scene.unity:
     - Class: 1
@@ -1419,4 +1416,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Level1Scene.unity
   - Assets/Scenes/Level2Scene.unity
-  playerPath: C:/Users/corne/Desktop/IC_TEST/GameIC.exe
+  playerPath: D:/FACULTATE/Projects/UnityGames/2D Project/The-Adventures-Of-Foxyu/GameBuild/The
+    Adventures Of Foxyu.exe

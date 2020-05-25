@@ -7,6 +7,13 @@ public class LevelChanger : MonoBehaviour
 {
     public void OnFadeComplete()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if(SceneManager.GetActiveScene().buildIndex != (SceneManager.sceneCountInBuildSettings - 1))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        else
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }

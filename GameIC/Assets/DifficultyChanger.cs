@@ -7,7 +7,6 @@ public class DifficultyChanger : MonoBehaviour
 
     void Start()
     {
-
         difficultyValue = GetComponent<TextMeshProUGUI>();
     }
 

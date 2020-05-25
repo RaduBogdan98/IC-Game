@@ -4,9 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    private int sceneToLoad;
+
+    internal void SetSceneToLoad(int sceneNumber)
+    {
+        sceneToLoad = sceneNumber;
+    }
+
     public void LoadScene()
     {
-        int levelToLoad = int.Parse(this.GetComponentInChildren<TextMeshProUGUI>().text);
-        SceneManager.LoadScene(levelToLoad);
+        SceneManager.LoadScene(sceneToLoad);
     }
 }

@@ -29,7 +29,9 @@ public class LevelMenuPopulator : MonoBehaviour
             spawnedObj.transform.localScale = new Vector3(1, 1, 1);
             spawnedObj.transform.SetParent(this.transform, false);
             spawnedObj.GetComponent<Button>().GetComponentInChildren<TextMeshProUGUI>().SetText(sceneNumber.ToString());
+            spawnedObj.GetComponent<SceneLoader>().SetSceneToLoad(sceneNumber);
             spawnedObj.transform.localPosition = gridPosition;
+            spawnedObj.SetActive(true);
 
             if (j < 4)
             {
