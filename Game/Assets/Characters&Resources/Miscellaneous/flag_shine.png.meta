@@ -1,0 +1,413 @@
+fileFormatVersion: 2
+guid: 62c250d3732006c488603ac7fe9cb64a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7981712107804456088
+    second: flag_shine_0
+  - first:
+      213: 7802815827935894220
+    second: flag_shine_1
+  - first:
+      213: 1332944452485092093
+    second: flag_shine_2
+  - first:
+      213: 5992319351974943788
+    second: flag_shine_3
+  - first:
+      213: -3888565184324381025
+    second: flag_shine_4
+  - first:
+      213: 2855233469032276685
+    second: flag_shine_5
+  - first:
+      213: -5940823500620600845
+    second: flag_shine_6
+  - first:
+      213: 5098982044416224124
+    second: flag_shine_4
+  - first:
+      213: -7204820775568301996
+    second: flag_shine_8
+  - first:
+      213: 6810513151458284336
+    second: flag_shine_9
+  - first:
+      213: 3611841867274114227
+    second: flag_shine_5
+  - first:
+      213: -888540935205188887
+    second: flag_shine_0
+  - first:
+      213: -6948629694906101469
+    second: flag_shine_1
+  - first:
+      213: 2016876667988028149
+    second: flag_shine_2
+  - first:
+      213: -8035537137316696324
+    second: flag_shine_3
+  - first:
+      213: -2095654367481614262
+    second: flag_shine_6
+  - first:
+      213: -6485931506229264785
+    second: flag_shine_16
+  - first:
+      213: 6220411415303844303
+    second: flag_shine_17
+  - first:
+      213: -1855793211626138825
+    second: flag_shine_18
+  - first:
+      213: 6136286657497887498
+    second: flag_shine_19
+  - first:
+      213: -3671307157788489489
+    second: flag_shine_20
+  - first:
+      213: 6859616934567302096
+    second: flag_shine_21
+  - first:
+      213: -6567019563266026746
+    second: flag_shine_22
+  - first:
+      213: 5209075084525100650
+    second: flag_shine_23
+  - first:
+      213: 9102563418707144066
+    second: flag_shine_24
+  - first:
+      213: -3274544439071411914
+    second: flag_shine_25
+  - first:
+      213: 3730411573099576603
+    second: flag_shine_26
+  - first:
+      213: -9048698593929929495
+    second: flag_shine_27
+  - first:
+      213: -9148255723333820583
+    second: flag_shine_28
+  - first:
+      213: 2065919956518187093
+    second: flag_shine_29
+  - first:
+      213: -7511165453077443862
+    second: flag_shine_30
+  - first:
+      213: 1198751613890724619
+    second: flag_shine_31
+  - first:
+      213: -591237759832955248
+    second: flag_shine_32
+  - first:
+      213: -7462621819996895738
+    second: flag_shine_33
+  - first:
+      213: 9045452202367834349
+    second: flag_shine_34
+  - first:
+      213: 3327696140948354571
+    second: flag_shine_35
+  - first:
+      213: -1706321839528738303
+    second: flag_shine_36
+  - first:
+      213: 3657954072911352879
+    second: flag_shine_37
+  - first:
+      213: 2713924350765163043
+    second: flag_shine_38
+  - first:
+      213: -8462125528431224669
+    second: flag_shine_39
+  - first:
+      213: -7877919037167794808
+    second: flag_shine_40
+  - first:
+      213: 8535471035350173462
+    second: flag_shine_41
+  - first:
+      213: 2489528085113189183
+    second: flag_shine_42
+  - first:
+      213: -6177882251822495945
+    second: flag_shine_43
+  - first:
+      213: -7756247081600842764
+    second: flag_shine_44
+  - first:
+      213: -587488753805521971
+    second: flag_shine_45
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 142
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: flag_shine_4
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 12
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b2681672933c640800000000000000
+      internalID: 5098982044416224124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flag_shine_5
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 12
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4d1cbba07df1230800000000000000
+      internalID: 3611841867274114227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flag_shine_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 12
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea83b42ab44ba3f0800000000000000
+      internalID: -888540935205188887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flag_shine_1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 12
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321146f9b12819f90800000000000000
+      internalID: -6948629694906101469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flag_shine_2
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 12
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa2337c4a26dfb10800000000000000
+      internalID: 2016876667988028149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flag_shine_3
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 12
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe67c63c890c7090800000000000000
+      internalID: -8035537137316696324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flag_shine_6
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 12
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40334eb47dbae2e0800000000000000
+      internalID: -2095654367481614262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
